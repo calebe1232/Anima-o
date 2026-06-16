@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+.botao-animado {
+    position: relative;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    font-size: 18px;
+
+    /* Animação */
+    animation: moverBotao 4s infinite;
+}
+
+@keyframes moverBotao {
+    0% {
+        left: 0;
+        background-color: blue;
+    }
+
+    50% {
+        left: 300px;
+        background-color: orange;
+    }
+
+    100% {
+        left: 0;
+        background-color: green;
+    }
+}
